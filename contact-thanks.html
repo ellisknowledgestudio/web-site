@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Message sent | Ellis Knowledge Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito+Sans:wght@400;700&display=swap">
+<style>
+body{margin:0;background:transparent;font:16px/1.55 "Nunito Sans","Segoe UI",system-ui,sans-serif;color:#15213A}
+.box{max-width:640px;margin:24px auto;padding:36px 28px;background:#0F1C3F;color:#fff;border-radius:18px;text-align:center}
+h1{font:700 36px/1.1 "Baloo 2","Trebuchet MS",system-ui,sans-serif;margin:0 0 10px}
+p{margin:0 0 18px;color:#D6DCEA}
+a{display:inline-block;background:#F4B942;color:#0F1C3F;font-weight:700;text-decoration:none;border-radius:999px;padding:11px 22px}
+</style></head>
+<body><div class="box">
+<h1 id="t">Thanks, your message is on its way</h1>
+<p id="m">I'll reply within one working day. Keep an eye on your inbox, and check spam just in case.</p>
+<a href="https://ellisknowledgestudio.com" target="_top">Back to Ellis Knowledge Studio</a>
+</div>
+<script>
+if(new URLSearchParams(location.search).get('error')==='1'){
+ document.getElementById('t').textContent="That didn't send";
+ document.getElementById('m').textContent="Please go back and check your name, email and message are filled in, or email james@ellisknowledgestudio.com.";}
+</script>
+</body></html>

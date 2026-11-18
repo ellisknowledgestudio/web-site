@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Websites for Local Businesses | Ellis Knowledge Studio Web</title>
+<meta name="description" content="Websites, Google Business Profile setup, social media and AI website assistants for local trades and small businesses. Fixed UK prices, you own everything, one person to call. Based in Bournemouth.">
+<link rel="canonical" href="https://web.ellisknowledgestudio.com/">
+<meta property="og:title" content="Get your business found locally">
+<meta property="og:description" content="Websites, Google, social media and AI website assistants set up for local trades and small businesses. Fixed prices, no jargon.">
+<meta property="og:url" content="https://web.ellisknowledgestudio.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX7LLDWVFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZX7LLDWVFL');
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"ProfessionalService",
+ "name":"Ellis Knowledge Studio Web",
+ "url":"https://web.ellisknowledgestudio.com/",
+ "email":"james@ellisknowledgestudio.com",
+ "description":"Websites, Google Business Profile setup, local SEO, social media and AI website chat assistants for local trades and small businesses.",
+ "areaServed":[{"@type":"City","name":"Bournemouth"},{"@type":"Country","name":"United Kingdom"}],
+ "founder":{"@type":"Person","name":"James"},
+ "priceRange":"££"
+}
+</script>
+<style>
+:root{
+  --ground:#F6F8F7; --surface:#FFFFFF; --ink:#11231F; --muted:#56655F; --line:#D8E0DC;
+  --green:#0F3D33; --green-ink:#F2F7F4; --viz:#E8590C; --viz-ink:#FFFFFF; --viz-soft:#FDEBDD;
+  --ok:#1C7C54;
+  --display:"Familjen Grotesk","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ground:#0C1714;--surface:#13221E;--ink:#E5EEEA;--muted:#9AAEA6;--line:#26382F;
+    --green:#1B5446;--green-ink:#EAF4EF;--viz:#FF7A33;--viz-ink:#1A0A00;--viz-soft:#3A2012;--ok:#4CC08A;color-scheme:dark}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--viz);outline-offset:2px}
+/* header */
+.top{position:sticky;top:0;z-index:10;background:var(--ground);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.brand{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand b{background:var(--green);color:var(--green-ink);border-radius:6px;padding:2px 8px;font-size:15px}
+.top nav{display:flex;gap:18px;margin-left:auto;font-weight:600;font-size:15.5px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+.btn{display:inline-block;font:700 16px var(--body);text-decoration:none;background:var(--viz);color:var(--viz-ink);border:0;border-radius:10px;padding:13px 22px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.sm{padding:9px 16px;font-size:15px}
+@media (max-width:760px){.top nav{display:none}.top .btn{margin-left:auto}}
+/* hero */
+.hero{padding-block:56px 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.hero h1{font-size:clamp(38px,6vw,64px);font-weight:700;margin-top:12px}
+.hero h1 em{font-style:normal;color:var(--viz)}
+.hero .lede{font-size:19px;color:var(--muted);max-width:52ch;margin-top:18px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:15px;color:var(--muted)}
+.hero .facts span::before{content:"✓ ";color:var(--ok);font-weight:700}
+/* search mock */
+.serp{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 18px 40px -24px rgba(15,61,51,.45);font-size:15px}
+.serp .q{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:9px 16px;color:var(--ink)}
+.serp .q svg{flex:none}
+.serp .map{height:92px;border-radius:10px;margin-top:14px;background:
+ radial-gradient(circle at 30% 45%,var(--viz) 0 6px,transparent 7px),
+ radial-gradient(circle at 62% 30%,var(--muted) 0 5px,transparent 6px),
+ radial-gradient(circle at 78% 68%,var(--muted) 0 5px,transparent 6px),
+ linear-gradient(115deg,transparent 48%,var(--line) 48% 52%,transparent 52%),
+ linear-gradient(20deg,transparent 60%,var(--line) 60% 63%,transparent 63%),
+ var(--ground)}
+.serp .res{display:grid;gap:2px;padding:12px 4px;border-bottom:1px solid var(--line)}
+.serp .res:last-child{border-bottom:0}
+.serp .res strong{font-size:16px}
+.serp .res small{color:var(--muted)}
+.serp .res.you{background:var(--viz-soft);border-radius:10px;padding:12px;border-bottom:0;margin-block:6px}
+.serp .stars{color:#F2A900;letter-spacing:1px}
+.serp .pill{justify-self:start;font-size:12px;font-weight:700;background:var(--viz);color:var(--viz-ink);padding:1px 8px;border-radius:4px;margin-top:4px}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.serp{max-width:460px}}
+/* sections */
+section.band{padding-block:72px;border-top:1px solid var(--line)}
+.head{display:grid;gap:12px;max-width:62ch;margin-bottom:36px}
+.head h2{font-size:clamp(30px,4.2vw,44px)}
+.head p{color:var(--muted);font-size:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.grid3{grid-template-columns:1fr}}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:12px;align-content:start}
+.svc h3{font-size:23px}
+.svc ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:4px;font-size:16px}
+.svc .num{font-family:var(--display);font-weight:700;color:var(--viz);font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+/* prices */
+.prices{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
+@media (max-width:860px){.prices{grid-template-columns:1fr}}
+.ptable{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.prow{display:grid;grid-template-columns:1fr auto;gap:4px 18px;padding:18px 22px;border-top:1px solid var(--line);align-items:baseline}
+.prow:first-child{border-top:0}
+.prow h3{font-size:19px}
+.prow p{grid-column:1;color:var(--muted);font-size:15.5px}
+.prow .amt{grid-row:1;grid-column:2;font-family:var(--display);font-weight:700;font-size:24px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.prow.total{background:var(--green);color:var(--green-ink)}
+.prow.total p{color:var(--green-ink);opacity:.85}
+.plans{display:grid;gap:16px}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:10px}
+.plan.best{border:2px solid var(--viz)}
+.plan .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.plan h3{font-size:21px}
+.plan .amt{font-family:var(--display);font-weight:700;font-size:26px;font-variant-numeric:tabular-nums}
+.plan .amt small{font-size:14px;color:var(--muted);font-family:var(--body);font-weight:600}
+.plan .setup{font-size:15px;color:var(--muted);font-weight:600}
+.plan ul{margin:0;padding-left:18px;color:var(--muted);font-size:15.5px;display:grid;gap:3px}
+.tag{display:inline-block;background:var(--viz);color:var(--viz-ink);font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:4px;vertical-align:3px;margin-left:6px}
+.small{font-size:15px;color:var(--muted)}
+/* ai assistant */
+.ai{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start}
+@media (max-width:860px){.ai{grid-template-columns:1fr}}
+.ai .copy{display:grid;gap:18px}
+.ai .copy ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:5px;font-size:16.5px}
+.try{display:flex;gap:12px;align-items:center;background:var(--viz-soft);border-radius:12px;padding:14px 16px;font-weight:600}
+.try .dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 25%,transparent)}
+.chat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 18px 40px -24px rgba(15,61,51,.45);display:grid;gap:10px;font-size:15.5px}
+.chat .bar{display:flex;align-items:center;gap:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.chat .av{width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--green-ink);display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.chat .bar small{display:block;color:var(--muted);font-size:13px}
+.msg{max-width:85%;padding:10px 14px;border-radius:14px;line-height:1.45}
+.msg.them{background:var(--ground);border:1px solid var(--line);border-bottom-left-radius:4px;justify-self:start}
+.msg.me{background:var(--green);color:var(--green-ink);border-bottom-right-radius:4px;justify-self:end}
+.msg.sent{justify-self:start;background:var(--viz-soft);border:0;font-size:14px;font-weight:600}
+.ai-plans{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px}
+@media (max-width:760px){.ai-plans{grid-template-columns:1fr}}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;display:grid;gap:8px;align-content:start;border-top:3px solid var(--ink);padding-top:14px}
+.steps li::before{content:"Step " counter(s);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--viz)}
+.steps h3{font-size:20px}
+.steps p{color:var(--muted);font-size:16px}
+/* trades */
+.trades{display:flex;flex-wrap:wrap;gap:10px}
+.trades span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-weight:600;font-size:15.5px}
+/* work */
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:760px){.work{grid-template-columns:1fr}}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:10px;text-decoration:none}
+.case:hover{border-color:var(--ink)}
+.case .url{font-size:14px;color:var(--viz);font-weight:700}
+.case h3{font-size:22px}
+.case p{color:var(--muted);font-size:16px}
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.about .copy{display:grid;gap:14px;max-width:62ch}
+.about .copy p{color:var(--muted)}
+/* faq */
+.faq{display:grid;gap:10px;max-width:760px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.faq summary{font-weight:700;cursor:pointer;font-size:17.5px}
+.faq details p{color:var(--muted);margin-top:10px}
+/* contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+form.enq{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.f{display:grid;gap:6px}
+.f label,.f .l{font-weight:600;font-size:15.5px}
+input[type=text],input[type=email],input[type=tel],textarea,select{width:100%;font:16px var(--body);color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:9px;padding:11px 12px}
+textarea{min-height:110px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-block;border:1px solid var(--line);background:var(--ground);border-radius:999px;padding:7px 13px;font-size:15px;font-weight:600}
+.chips input:checked+span{background:var(--green);border-color:var(--green);color:var(--green-ink)}
+.chips input:focus-visible+span{outline:3px solid var(--viz);outline-offset:2px}
+.hp{position:absolute;left:-9999px}
+.notice{border-radius:10px;padding:14px 16px;font-weight:600}
+.notice.ok{background:var(--viz-soft)}
+/* live demos */
+.demos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.demos{grid-template-columns:1fr}}
+.demo{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;text-decoration:none;box-shadow:0 18px 40px -28px rgba(15,61,51,.45);transition:border-color .15s,transform .15s}
+.demo:hover{border-color:var(--ink);transform:translateY(-2px)}
+.demo .ico{width:48px;height:48px;border-radius:12px;background:var(--viz-soft);color:var(--viz);display:grid;place-items:center}
+.demo .trade{font-family:var(--display);font-weight:700;color:var(--viz);font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+.demo h3{font-size:23px}
+.demo p{color:var(--muted);font-size:16px}
+.demo .agent{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15.5px}
+.demo .agent .av{width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--green-ink);display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.demo .agent small{display:block;color:var(--muted);font-weight:400;font-size:13.5px}
+.demo .url{font-size:14px;color:var(--muted);font-weight:600;word-break:break-all}
+.demo .go{margin-top:auto}
+.demo .url{margin-top:auto}
+.demo .url+.go{margin-top:4px}
+section[id]{scroll-margin-top:72px}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ok)}
+.live::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 25%,transparent)}
+.demo-note{margin-top:18px}
+.hero .demo-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-weight:700;text-decoration:none;background:var(--viz-soft);border-radius:999px;padding:9px 16px 9px 12px;font-size:15.5px}
+.hero .demo-link:hover{text-decoration:underline}
+footer{border-top:1px solid var(--line);padding-block:32px;font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer nav{display:flex;flex-wrap:wrap;gap:18px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">Ellis Knowledge Studio <b>Web</b></a>
+    <nav aria-label="Main">
+      <a href="#demos">Live demos</a>
+      <a href="#services">Services</a>
+      <a href="#ai">AI assistant</a>
+      <a href="#prices">Prices</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn sm" href="#contact">Get a quote</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Websites · Google · Social media · AI assistants</div>
+      <h1>Be the business people find when they search <em>“near me”</em></h1>
+      <p class="lede">I build your website, set up your Google Business Profile and get your social pages working, so local customers find you, trust you and call you. Fixed prices, plain English, and one person to deal with from start to finish.</p>
+      <div class="ctas">
+        <a class="btn" href="#contact">Get a free quote</a>
+        <a class="btn ghost" href="#prices">See prices</a>
+      </div>
+      <a class="demo-link" href="#demos"><span class="live" aria-hidden="true"></span>Hear an AI receptionist answer: try the drains, heating and window cleaning demos</a>
+      <div class="facts"><span>You own your site and domain</span><span>Live in about 2 weeks</span><span>No long contracts</span></div>
+    </div>
+    <div class="serp" aria-label="Example of a local Google search result with your business at the top">
+      <div class="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>window cleaner near me</div>
+      <div class="map" aria-hidden="true"></div>
+      <div class="res you"><strong>Your Business Name</strong><small><span class="stars">★★★★★</span> 5.0 (38) · Window cleaning service</small><small>Open · Call · Website · Get a quote</small><span class="pill">That's you</span></div>
+      <div class="res"><strong>Another Window Cleaner</strong><small><span class="stars">★★★★</span> 4.1 (6) · No website</small></div>
+      <div class="res"><strong>A. N. Other Services</strong><small>No reviews</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demos">
+  <div class="wrap">
+    <div class="head">
+      <div class="live">Live demos</div>
+      <h2>Talk to an AI receptionist I've built</h2>
+      <p>Three sample trade websites, each with its own voice assistant. Open one, tap the call button and speak to it like a customer: ask a price, describe the job, give your postcode. It takes the details just as it would for a real business.</p>
+    </div>
+    <div class="demos">
+      <a class="demo" href="https://drains.ellisknowledgestudio.com/" target="_blank" rel="noopener">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span>
+        <span class="trade">Drains</span>
+        <h3>Harbourside Drainage</h3>
+        <p>24/7 blocked drain help across Bournemouth, Poole and Christchurch. Ask about a blocked toilet, a smelly drain or an emergency call-out.</p>
+        <span class="agent"><span class="av" aria-hidden="true">J</span><span>Josie<small>AI receptionist, Dorset accent</small></span></span>
+        <span class="url">drains.ellisknowledgestudio.com</span>
+        <span class="btn sm go">Try the drains demo &rarr;</span>
+      </a>
+      <a class="demo" href="https://heating.ellisknowledgestudio.com/" target="_blank" rel="noopener">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.8 2.3-5 .2 1.6 1 2.6 2.2 3C11 8.5 11.2 5.5 12 3z"/></svg></span>
+        <span class="trade">Heating</span>
+        <h3>Chine Heating &amp; Plumbing</h3>
+        <p>Boiler breakdowns, servicing and repairs. Tell it your boiler has stopped and see how it handles an urgent job and gas safety.</p>
+        <span class="agent"><span class="av" aria-hidden="true">T</span><span>Tom<small>AI receptionist, Bournemouth accent</small></span></span>
+        <span class="url">heating.ellisknowledgestudio.com</span>
+        <span class="btn sm go">Try the heating demo &rarr;</span>
+      </a>
+      <a class="demo" href="https://windows.ellisknowledgestudio.com/" target="_blank" rel="noopener">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M12 3v18M4 12h16"/></svg></span>
+        <span class="trade">Window cleaning</span>
+        <h3>Hengistbury Window &amp; Gutter Care</h3>
+        <p>Pure water window cleaning and gutter clearing across BH postcodes. Ask for a price, then book a clean.</p>
+        <span class="agent"><span class="av" aria-hidden="true">B</span><span>Ben<small>AI receptionist, local accent</small></span></span>
+        <span class="url">windows.ellisknowledgestudio.com</span>
+        <span class="btn sm go">Try the window cleaning demo &rarr;</span>
+      </a>
+    </div>
+    <p class="small demo-note">These are demo businesses made up to show what the assistant can do, so no real trader will call you back. Want one for your business? <a href="#contact">Get a quote</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>Three things that get the phone ringing</h2>
+      <p>Most local customers search on their phone, look at the map, read the reviews, then tap to call. I set up every part of that journey for you.</p>
+    </div>
+    <div class="grid3">
+      <article class="svc">
+        <div class="num">Your website</div>
+        <h3>A site that turns visitors into enquiries</h3>
+        <ul>
+          <li>5 pages: Home, Services, Areas covered, About &amp; reviews, Get a quote</li>
+          <li>Quote form that lands in your inbox</li>
+          <li>Tap-to-call and WhatsApp buttons</li>
+          <li>Built for phones first</li>
+          <li>Your own web address and professional email</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="num">Google &amp; local SEO</div>
+        <h3>Show up on the map for your towns</h3>
+        <ul>
+          <li>Google Business Profile set up, verified and filled in properly</li>
+          <li>Each page tuned for “[service] in [your town]” searches</li>
+          <li>Listed on 10 free directories, including Bing, Apple Maps and Yell</li>
+          <li>A simple way for customers to leave reviews</li>
+          <li>Search Console and visitor tracking</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="num">Social media</div>
+        <h3>Pages that look busy and trustworthy</h3>
+        <ul>
+          <li>Facebook, Instagram and Nextdoor business pages</li>
+          <li>Profile and cover images that match your brand</li>
+          <li>9 launch posts ready to go</li>
+          <li>12 reusable templates for before-and-afters, reviews and offers</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="ai">
+  <div class="wrap">
+    <div class="ai">
+      <div class="copy">
+        <div class="head" style="margin:0">
+          <div class="eyebrow">New · AI website assistant</div>
+          <h2>Answer every enquiry, even when you're on a job</h2>
+          <p>A chat assistant on your website that knows your services, prices and areas. It answers questions day and night, takes the customer's details and sends you the enquiry, so you don't lose work while you're up a ladder or asleep.</p>
+        </div>
+        <div class="try"><span class="dot" aria-hidden="true"></span><span>Try it now: the chat button in the bottom corner of this page is one I built.</span></div>
+        <ul>
+          <li>Trained on your business: services, prices, opening hours, towns you cover and common questions</li>
+          <li>Takes name, number and job details, then emails them straight to you</li>
+          <li>Your business name, colours and tone of voice</li>
+          <li>Added to your site, whether I built it or it's on WordPress, Wix, Squarespace or Hostinger</li>
+          <li>I read real conversations and teach it anything it couldn't answer</li>
+        </ul>
+      </div>
+      <div class="chat" aria-label="Example conversation with a website assistant">
+        <div class="bar"><span class="av" aria-hidden="true">A</span><div><strong>Your Business Assistant</strong><small>Replies instantly</small></div></div>
+        <div class="msg them">Hi! I can help with prices, availability or booking a quote. What do you need?</div>
+        <div class="msg me">Do you clean conservatory roofs in Poole? How much?</div>
+        <div class="msg them">Yes, we cover Poole. Conservatory roofs usually start from £60, depending on size. Would you like a free quote?</div>
+        <div class="msg me">Yes please, it's quite a big one</div>
+        <div class="msg them">No problem. What's your name and the best number to reach you on?</div>
+        <div class="msg sent">✓ Enquiry sent to the owner</div>
+      </div>
+    </div>
+    <div class="ai-plans">
+      <div class="plan">
+        <div class="row"><h3>Assistant</h3><span class="amt">£29<small>/month</small></span></div>
+        <div class="setup">£149 one-off setup</div>
+        <ul><li>Chat assistant trained on your business</li><li>Enquiries emailed to you</li><li>Your branding and tone of voice</li><li>Knowledge updated every quarter</li></ul>
+      </div>
+      <div class="plan best">
+        <div class="row"><h3>Assistant Plus <span class="tag">Busy businesses</span></h3><span class="amt">£59<small>/month</small></span></div>
+        <div class="setup">£299 one-off setup</div>
+        <ul><li>Everything in Assistant</li><li>Books appointments into your calendar</li><li>Monthly conversation review and updates</li><li>Monthly report: chats, enquiries, top questions</li></ul>
+      </div>
+    </div>
+    <p class="small" style="margin-top:16px">Want it to answer by voice too? <a href="#demos">Try the live voice demos</a> for drains, heating and window cleaning, then <a href="#contact">ask me about it</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="prices">
+  <div class="wrap">
+    <div class="head">
+      <h2>Clear prices, agreed before I start</h2>
+      <p>Pick one service or the full launch. Half up front, half when it goes live.</p>
+    </div>
+    <div class="prices">
+      <div class="ptable">
+        <div class="prow"><h3>Website</h3><span class="amt">£650</span><p>5 pages, quote form, call and WhatsApp buttons, mobile-first.</p></div>
+        <div class="prow"><h3>Google &amp; local SEO setup</h3><span class="amt">£350</span><p>Business Profile, page SEO, 10 directory listings, review link.</p></div>
+        <div class="prow"><h3>Social media setup</h3><span class="amt">£250</span><p>Three business pages, branded images, 9 posts, 12 templates.</p></div>
+        <div class="prow"><h3>Leaflet &amp; QR code</h3><span class="amt">£75</span><p>A leaflet or door-hanger design with a QR code to your quote form.</p></div>
+        <div class="prow total"><h3>Full launch</h3><span class="amt">£1,325</span><p>Everything above, live in about two weeks.</p></div>
+        <div class="prow"><h3>AI website assistant</h3><span class="amt">from £149</span><p>Add to any package or existing site, then from £29 a month. <a href="#ai">See what it does</a>.</p></div>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="row"><h3>Tick-over</h3><span class="amt">£45<small>/month</small></span></div>
+          <ul><li>Site kept running, updated and secure</li><li>Up to 30 minutes of changes a month</li><li>Monthly Google profile check</li></ul>
+        </div>
+        <div class="plan best">
+          <div class="row"><h3>Grow <span class="tag">Most popular</span></h3><span class="amt">£195<small>/month</small></span></div>
+          <ul><li>Everything in Tick-over</li><li>8 social posts a month from your photos</li><li>Weekly Google profile posts and review follow-ups</li><li>A new area page each month to win more towns</li><li>Monthly report: calls, enquiries, rankings</li></ul>
+        </div>
+        <p class="small">Monthly plans are optional, with no contract and one month's notice. Hosting and your web address are bought in your name, usually a few pounds a month, paid direct to the provider.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="head"><h2>How it works</h2></div>
+    <ol class="steps">
+      <li><h3>Tell me about your business</h3><p>Fill in a short questionnaire or have a 20-minute chat.</p></li>
+      <li><h3>Get your fixed quote</h3><p>You'll know exactly what you're getting and what it costs.</p></li>
+      <li><h3>I build it</h3><p>Site, Google and social set up. You check it and ask for changes.</p></li>
+      <li><h3>Go live</h3><p>We launch, ask your regulars for reviews and start bringing in new work.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" id="who">
+  <div class="wrap">
+    <div class="head">
+      <h2>Made for local trades and small businesses</h2>
+      <p>If your customers find you by searching, asking neighbours or looking on Facebook, this is for you.</p>
+    </div>
+    <div class="trades">
+      <span>Window cleaners</span><span>Cleaners</span><span>Gardeners</span><span>Handymen</span><span>Plumbers</span><span>Electricians</span><span>Decorators</span><span>Dog groomers &amp; walkers</span><span>Pet sitters</span><span>Mobile mechanics</span><span>Hairdressers</span><span>Tutors</span><span>Makers &amp; small shops</span>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>Sites I've built and run</h2>
+      <p>Every one of these was built, written and optimised by me, and I still look after them.</p>
+    </div>
+    <div class="work">
+      <a class="case" href="https://portothelo.com" target="_blank" rel="noopener">
+        <span class="url">portothelo.com</span>
+        <h3>Portothelo, handmade bags</h3>
+        <p>Online shop for a handmade purse business. Product listings, SEO on every product page, shipping at checkout and a daily Pinterest routine.</p>
+      </a>
+      <a class="case" href="https://classroom.ellisknowledgestudio.com" target="_blank" rel="noopener">
+        <span class="url">classroom.ellisknowledgestudio.com</span>
+        <h3>Ellis Knowledge Studio Classroom</h3>
+        <p>Free interactive learning tools for maths, science and geography, custom built to bring visitors in and sell printable packs.</p>
+      </a>
+      <a class="case" href="https://chess.ellisknowledgestudio.com" target="_blank" rel="noopener">
+        <span class="url">chess.ellisknowledgestudio.com</span>
+        <h3>Chess training site</h3>
+        <p>An openings trainer and analysis board that people can use in the browser, with progress saved as they go.</p>
+      </a>
+      <a class="case" href="https://wolfiecats.com" target="_blank" rel="noopener">
+        <span class="url">wolfiecats.com</span>
+        <h3>Wolfiecats</h3>
+        <p>A brand site and social channels built around AI-made videos, showing how consistent content grows an audience.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="about">
+  <div class="wrap about">
+    <div class="head" style="margin:0"><h2>Hi, I'm James</h2></div>
+    <div class="copy">
+      <p>I spent 18 years as a technical services engineer, installing and fixing systems for businesses and explaining them to people who just needed them to work. Now I use the same approach on websites.</p>
+      <p>You won't get jargon, a long contract or an agency passing you between people. You get one person who builds your site, sets up your Google profile, tells you what's working, and answers the phone.</p>
+      <p>I'm based in Bournemouth and work with businesses anywhere in the UK.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <div class="head"><h2>Questions people ask</h2></div>
+    <div class="faq">
+      <details><summary>Do I own my website?</summary><p>Yes. Your hosting and web address are bought in your name. If we ever stop working together, everything stays with you.</p></details>
+      <details><summary>How long does it take?</summary><p>About two weeks from getting your answers and photos. Google verification can sometimes add a few days.</p></details>
+      <details><summary>What do I need to give you?</summary><p>Answers to a short questionnaire, a few photos of your work, and around an hour of your time across the whole project.</p></details>
+      <details><summary>Do I have to take a monthly plan?</summary><p>No. The monthly plans are optional. If you do take one, there's no contract and you can stop with a month's notice.</p></details>
+      <details><summary>I already have a website. Can you fix it?</summary><p>Often, yes. Send me the link and I'll tell you what I'd change and give you a fixed price.</p></details>
+      <details><summary>Will the AI assistant make things up?</summary><p>It only answers from the information about your business that I give it. If it doesn't know something, it says so and takes the customer's details so you can call them back. I check real conversations and fill any gaps.</p></details>
+      <details><summary>Can I add the AI assistant to my existing website?</summary><p>Yes. It's a small piece of code that works on most website builders, including WordPress, Wix, Squarespace and Hostinger. You don't need a new site.</p></details>
+      <details><summary>What happens to customers' chat details?</summary><p>Enquiries are sent to you by email. I'll add a short note to your privacy page explaining the chat assistant, so you stay on the right side of data protection rules.</p></details>
+      <details><summary>How do I pay?</summary><p>Half when we start and half when the site goes live, by bank transfer. Monthly plans are paid monthly.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="wrap contact">
+    <div class="head" style="margin:0">
+      <h2>Get a free quote</h2>
+      <p>Tell me a bit about your business and I'll reply within one working day.</p>
+      <p class="small">Prefer email? <strong>james@ellisknowledgestudio.com</strong></p>
+      <p class="small">Ready to go? <a href="/start.html">Fill in the full business questionnaire</a>.</p>
+    </div>
+    <form class="enq" method="post" action="/send.php">
+      <div id="formNotice" class="notice ok" hidden>Thanks, your message has been sent. I'll be in touch within one working day.</div>
+      <input type="hidden" name="form_type" value="Quote enquiry">
+      <div class="hp" aria-hidden="true"><label for="website_url">Leave this empty</label><input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off"></div>
+      <div class="two">
+        <div class="f"><label for="name">Your name</label><input type="text" id="name" name="Name" required autocomplete="name"></div>
+        <div class="f"><label for="business">Business name</label><input type="text" id="business" name="Business" autocomplete="organization"></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+        <div class="f"><label for="phone">Phone</label><input type="tel" id="phone" name="Phone" autocomplete="tel"></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="trade">What do you do?</label><input type="text" id="trade" name="Trade" placeholder="e.g. window cleaning"></div>
+        <div class="f"><label for="town">Main town you work in</label><input type="text" id="town" name="Town"></div>
+      </div>
+      <div class="f"><span class="l" id="int-l">I'm interested in</span>
+        <div class="chips" role="group" aria-labelledby="int-l">
+          <label><input type="checkbox" name="Interested in[]" value="Full launch"><span>Full launch</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="Website"><span>Website</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="Google & SEO"><span>Google &amp; SEO</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="Social media"><span>Social media</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="AI assistant"><span>AI assistant</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="Monthly plan"><span>Monthly plan</span></label>
+          <label><input type="checkbox" name="Interested in[]" value="Fix my existing site"><span>Fix my existing site</span></label>
+        </div>
+      </div>
+      <div class="f"><label for="msg">Anything else?</label><textarea id="msg" name="Message" placeholder="Current website or Facebook page, what you'd like to achieve..."></textarea></div>
+      <div><button class="btn" type="submit">Send my enquiry</button></div>
+      <p class="small">I'll only use your details to reply to you.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Ellis Knowledge Studio · james@ellisknowledgestudio.com</span>
+    <nav aria-label="Other sites">
+      <a href="https://drains.ellisknowledgestudio.com">Drains demo</a>
+      <a href="https://heating.ellisknowledgestudio.com">Heating demo</a>
+      <a href="https://windows.ellisknowledgestudio.com">Windows demo</a>
+      <a href="https://ellisknowledgestudio.com">Main site</a>
+      <a href="https://studio.ellisknowledgestudio.com">Voiceover &amp; translation</a>
+      <a href="https://classroom.ellisknowledgestudio.com">Classroom</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Ellis chat assistant (Ellis ElevenLabs account) -->
+<elevenlabs-convai agent-id="agent_3801m3w2yw5bfhra0enqr4wpaasq"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var qs=new URLSearchParams(location.search),n=document.getElementById('formNotice');
+if(qs.get('sent')==='1'){n.hidden=false;}
+if(qs.get('error')==='1'){n.textContent="That didn't send. Please add your email address and try again, or email james@ellisknowledgestudio.com.";n.hidden=false;}
+</script>
+</body>
+</html>

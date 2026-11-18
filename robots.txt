@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /start.html
+Sitemap: https://web.ellisknowledgestudio.com/sitemap.xml

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX7LLDWVFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZX7LLDWVFL');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business Questionnaire | Ellis Knowledge Studio Web</title>
+<meta name="description" content="Tell me about your business so I can plan your website, Google profile and social media.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+:root{
+  --ground:#F6F8F7; --surface:#FFFFFF; --ink:#11231F; --muted:#56655F; --line:#D8E0DC;
+  --green:#0F3D33; --green-ink:#F2F7F4; --viz:#E8590C; --viz-ink:#FFFFFF; --viz-soft:#FDEBDD;
+  --display:"Familjen Grotesk","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ground:#0C1714;--surface:#13221E;--ink:#E5EEEA;--muted:#9AAEA6;--line:#26382F;
+    --green:#1B5446;--green-ink:#EAF4EF;--viz:#FF7A33;--viz-ink:#1A0A00;--viz-soft:#3A2012;color-scheme:dark}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.55 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+h1,h2{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--viz);outline-offset:2px}
+.top{border-bottom:1px solid var(--line)}
+.top .in{max-width:760px;margin:0 auto;padding:12px 20px}
+.brand{font-family:var(--display);font-weight:700;font-size:19px;text-decoration:none;color:inherit}
+.brand b{background:var(--green);color:var(--green-ink);border-radius:6px;padding:2px 8px;font-size:15px}
+header.intro{padding-block:40px 24px;display:grid;gap:12px}
+h1{font-size:clamp(32px,6vw,46px)}
+.muted{color:var(--muted)}
+.bar{position:sticky;top:0;background:var(--ground);padding-block:10px;z-index:5;font-size:14.5px;color:var(--muted)}
+.bar div{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:var(--viz);transition:width .3s}
+form{display:grid;gap:24px;margin-top:12px}
+fieldset{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:20px;margin:0;display:grid;gap:20px;min-width:0}
+legend{font-family:var(--display);font-weight:700;font-size:21px;padding:0 8px;margin-left:-8px}
+.q{display:grid;gap:7px}
+.q>label,.q>.ql{font-weight:600}
+.hint{font-size:14.5px;color:var(--muted);margin-top:-4px}
+input[type=text],input[type=tel],input[type=email],input[type=url],textarea{width:100%;font:16px var(--body);color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:9px;padding:11px 12px}
+textarea{min-height:88px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-block;border:1px solid var(--line);background:var(--ground);border-radius:999px;padding:7px 13px;font-size:15.5px}
+.chips input:checked+span{background:var(--green);border-color:var(--green);color:var(--green-ink)}
+.chips input:focus-visible+span{outline:3px solid var(--viz);outline-offset:2px}
+.btn{font:700 17px var(--body);background:var(--viz);color:var(--viz-ink);border:0;border-radius:10px;padding:14px 24px;cursor:pointer;justify-self:start}
+.notice{border-radius:10px;padding:16px;font-weight:600;background:var(--viz-soft)}
+.hp{position:absolute;left:-9999px}
+.req{color:var(--viz)}
+</style>
+</head>
+<body>
+<div class="top"><div class="in"><a class="brand" href="/">Ellis Knowledge Studio <b>Web</b></a></div></div>
+<div class="wrap">
+  <header class="intro">
+    <h1>Tell me about your business</h1>
+    <p class="muted">This helps me plan your website, Google profile and social pages. It takes about 10 minutes. Skip anything you're unsure about and we'll cover it when we talk. Your answers are saved on this device until you send them.</p>
+    <div id="notice" class="notice" hidden></div>
+  </header>
+  <div class="bar"><span id="progText">0 answered</span><div><i id="progBar"></i></div></div>
+  <form id="q" method="post" action="/send.php">
+    <input type="hidden" name="form_type" value="Business questionnaire">
+    <div class="hp" aria-hidden="true"><label for="website_url">Leave this empty</label><input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off"></div>
+  </form>
+</div>
+<script>
+const SECTIONS=[
+ {t:"You and the business",f:[
+  {id:"Name",l:"Your name",type:"text",req:1},
+  {id:"email",l:"Your email",type:"email",req:1},
+  {id:"Phone",l:"Phone number customers should call",type:"tel"},
+  {id:"Business",l:"Business name",h:"Not settled yet? Put a couple of ideas.",type:"text"},
+  {id:"Trade",l:"What does the business do?",type:"text"},
+  {id:"WhatsApp",l:"Can customers WhatsApp that number?",type:"radio",o:["Yes","No","Use a different number"]},
+  {id:"Base town",l:"Town you're based in",type:"text"},
+  {id:"Show address",l:"Should your address show online?",h:"If you work from home, Google can show the area you cover instead.",type:"radio",o:["No, hide it","Yes, show it","I have a shop or premises"]},
+  {id:"Started trading",l:"When did you start trading?",type:"text"},
+  {id:"Set up as",l:"How are you set up?",type:"radio",o:["Sole trader","Limited company","Not sure yet"]}
+ ]},
+ {t:"What you offer",f:[
+  {id:"Services",l:"List your main services",h:"One per line. Each can become its own section on the site.",type:"textarea"},
+  {id:"Prices",l:"Typical prices",h:"Rough is fine. Helps decide whether to show 'from' prices.",type:"textarea"},
+  {id:"Show prices",l:"Show prices on the website?",type:"radio",o:["Yes, 'from' prices","No, quote only","Not sure"]},
+  {id:"Payment",l:"How customers can pay",type:"check",o:["Cash","Bank transfer","Card","Direct debit","Online booking / deposit"]}
+ ]},
+ {t:"Where and when",f:[
+  {id:"Areas",l:"Towns, villages or postcodes you cover",h:"List them all. Each one is something people type into Google.",type:"textarea"},
+  {id:"Priority areas",l:"Top 3 areas you most want work in",type:"text"},
+  {id:"Hours",l:"Working days and hours",type:"text"},
+  {id:"Capacity",l:"How many new customers could you take on a month?",type:"text"}
+ ]},
+ {t:"Why customers should trust you",f:[
+  {id:"Insurance and qualifications",l:"Insurance, qualifications or memberships",type:"textarea"},
+  {id:"Why choose you",l:"Why should someone pick you over a competitor?",type:"textarea"},
+  {id:"Reviews",l:"How many happy customers would leave a Google review?",type:"text"},
+  {id:"Photos",l:"Photos you already have",type:"check",o:["Before & afters","Me at work","Van or premises","A logo","None yet"]},
+  {id:"On camera",l:"Happy to appear in photos or short videos?",type:"radio",o:["Yes","Photos only","Rather not"]}
+ ]},
+ {t:"What's online now",f:[
+  {id:"Domain",l:"Web address",h:"Own one already? Put it here. If not, list 2 or 3 you'd like.",type:"text"},
+  {id:"Current website",l:"Current website, if any",type:"text"},
+  {id:"Google profile",l:"Google Business Profile",type:"radio",o:["Have one","Don't have one","Not sure"]},
+  {id:"Accounts",l:"Accounts you already have",type:"check",o:["Facebook page","Instagram","Nextdoor","TikTok","LinkedIn","Checkatrade / TrustATrader","Yell","None"]},
+  {id:"Account links",l:"Names or links for those accounts",type:"textarea"},
+  {id:"Where customers come from",l:"Where do new customers come from now?",type:"text"},
+  {id:"Competitors",l:"Local competitors you rate or want to beat",type:"text"}
+ ]},
+ {t:"Look and goals",f:[
+  {id:"Colours",l:"Colours you like, or logo and van colours to match",type:"text"},
+  {id:"Feel",l:"How should it come across?",type:"radio",o:["Friendly & local","Smart & professional","Bold & modern"]},
+  {id:"Sites you like",l:"Any websites you like the look of?",type:"textarea"},
+  {id:"Goal",l:"What would a good result look like in 6 months?",type:"textarea"},
+  {id:"Social involvement",l:"How hands-on do you want to be with social media?",type:"radio",o:["I'll send photos, you post","I'll post sometimes with templates","I'll run it once it's set up"]},
+  {id:"Package",l:"Which option are you leaning towards?",type:"radio",o:["Full launch","Website only","Google & SEO only","Social only","Launch + monthly plan","Want to chat first"]},
+  {id:"Notes",l:"Anything else?",type:"textarea"}
+ ]}
+];
+const form=document.getElementById('q');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+let k=0;
+form.insertAdjacentHTML('beforeend',SECTIONS.map(s=>`<fieldset><legend>${esc(s.t)}</legend>${s.f.map(q=>{
+  const id='q-'+slug(q.id), hint=q.h?`<div class="hint">${esc(q.h)}</div>`:"", star=q.req?' <span class="req">*</span>':'';
+  if(q.type==="radio"||q.type==="check"){
+    const t=q.type==="radio"?"radio":"checkbox", nm=q.type==="check"?q.id+"[]":q.id;
+    return `<div class="q" role="group" aria-labelledby="${id}"><div class="ql" id="${id}">${esc(q.l)}</div>${hint}<div class="chips">${q.o.map((o,i)=>`<label><input type="${t}" name="${esc(nm)}" id="${id}-${i}" value="${esc(o)}"><span>${esc(o)}</span></label>`).join("")}</div></div>`;
+  }
+  const r=q.req?' required':'';
+  const field=q.type==="textarea"?`<textarea id="${id}" name="${esc(q.id)}"></textarea>`:`<input type="${q.type}" id="${id}" name="${esc(q.id)}"${r}>`;
+  return `<div class="q"><label for="${id}">${esc(q.l)}${star}</label>${hint}${field}</div>`;
+}).join("")}</fieldset>`).join("")+`<button class="btn" type="submit">Send my answers</button>`);
+
+const KEY="ekw-questionnaire-v1", total=SECTIONS.reduce((n,s)=>n+s.f.length,0);
+function state(){const d={};new FormData(form).forEach((v,key)=>{if(key==='form_type'||key==='website_url')return;(d[key]=d[key]||[]).push(v)});return d;}
+function progress(){const d=state();const n=Object.keys(d).filter(x=>d[x].some(v=>String(v).trim())).length;
+  document.getElementById('progText').textContent=`${n} of ${total} answered`;document.getElementById('progBar').style.width=(n/total*100)+'%';}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state()))}catch(e){}progress();}
+try{const d=JSON.parse(localStorage.getItem(KEY)||'null');if(d){for(const key in d){form.querySelectorAll('[name="'+CSS.escape(key)+'"]').forEach(el=>{
+  if(el.type==='checkbox'||el.type==='radio')el.checked=d[key].includes(el.value);else el.value=d[key][0]||'';});}}}catch(e){}
+progress();
+form.addEventListener('input',save);form.addEventListener('change',save);
+
+const qs=new URLSearchParams(location.search),note=document.getElementById('notice');
+if(qs.get('sent')==='1'){note.textContent="Thanks, your answers have been sent. I'll be in touch within one working day to arrange a quick call.";note.hidden=false;try{localStorage.removeItem(KEY)}catch(e){}form.reset();progress();}
+if(qs.get('error')==='1'){note.textContent="That didn't send. Please check your name and email are filled in, then try again.";note.hidden=false;}
+</script>
+</body>
+</html>
